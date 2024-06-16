@@ -1,0 +1,3 @@
+#input that can be read from your python scripts e.g.
+#typically a json file or a csv file, also txt works though.
+0,1,2,3,4,5
