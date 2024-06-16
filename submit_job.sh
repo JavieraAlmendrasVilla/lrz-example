@@ -1,12 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=batch_jobs         # Job name
-#SBATCH --ntasks=1                    # Number of tasks
-#SBATCH --cpus-per-task=1             # Number of CPU cores per task
-#SBATCH --mem=500M                    # Memory per node
-#SBATCH --time=01:00:00               # Time limit hrs:min:sec
-#SBATCH --clusters=inter                # Cluster name
-#SBATCH --partition=cm2_inter           # Partition name
-#SBATCH --output=slurm-log.out        # SLURM output file
+#SBATCH --account=ge85tuy2
+#SBATCH --partition=cm2_inter
+#SBATCH --job-name=batch_jobs
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=500M
+#SBATCH --time=01:00:00
+#SBATCH --output=slurm-log.out
+#SBATCH --clusters=inter
+
 
 # Ensure logs and error-logs directories exist
 mkdir -p logs error-logs slurm-logs/batch_jobs
